@@ -11,8 +11,10 @@ body {
   background-color: var(--background);
 }
 
+/*INDEX*/
 
-.navBar {
+.navBar,
+.navMenu {
   display: flex;
   flex-direction: column;
 }
@@ -23,27 +25,54 @@ body {
   margin: auto;
   align-self: center;
 }
-.containerButton{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+
+.containerButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
-.buttonIndex{
-    width: 70%;
-    align-self: center;
-    padding: 2rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    margin-top: 5rem;
-    appearance: none;
-    border: none;
-    border-radius: 1rem;
-    background-color: var(--blue);
-    color: var(--background);
-    font-size: 2.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    
+
+.buttonIndex {
+  width: 70%;
+  align-self: center;
+  padding: 2rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: 5rem;
+  appearance: none;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--blue);
+  color: var(--background);
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+/* MENU */
+
+.subMenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em 1em;
+}
+
+.client {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+#breakfastMenuButton {
+  grid-area: 2 / 2 / 3 / 2;
+}
+
+#principalMenuButton {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.waiter {
+  grid-area: 2 / 3 / 3 / 4;
 }
