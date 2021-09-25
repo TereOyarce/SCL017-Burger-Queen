@@ -1,0 +1,65 @@
+[
+    {
+        "name": "FelyneLatte",
+        "info": "Café americano con leche",
+        "img": "https://firebasestorage.googleapis.com/v0/b/palico-scafe.appspot.com/o/capcom2.png?alt=media&token=f215a4c9-3ed7-4d11-b12d-a09371a6fc9d",
+        "price": 1200,
+        "type": "breakfast"
+    },
+    {
+        "name": "MelynxPan",
+        "info": "Pancakes con variedad de salsas dulces",
+        "img": "https://firebasestorage.googleapis.com/v0/b/palico-scafe.appspot.com/o/imagen_2021-09-20_113925_waifu2x_art_noise1_scale_tta_1.png?alt=media&token=264b5168-3e68-4153-a566-d62a42839742",
+        "price": 2300,
+        "type": "breakfast"
+    },
+    {
+        "name": "CurryPao",
+        "info": "Curry de verduras, con variedad de proteínas",
+        "img": "https://firebasestorage.googleapis.com/v0/b/palico-scafe.appspot.com/o/capcom-cafe-monster-hunter-mofumofuworld-pic-4.png?alt=media&token=44e40f5b-46ae-44aa-a98e-8c1049422ead",
+        "price": 4500,
+        "type": "principal"
+    },
+    {
+        "name": "Omelyne",
+        "info": "Omelette, acompañado de huevo frito, ensalada y sopa",
+        "img": "https://firebasestorage.googleapis.com/v0/b/palico-scafe.appspot.com/o/capcom-cafe-monster-hunter-mofumofuworld-pic-3.png?alt=media&token=64af3598-7c07-4b28-8810-54f874c54015",
+        "price": 5500,
+        "type": "principal"
+    },
+    {
+        "name": "PanPanFestin",
+        "info": "Pan de huevo relleno de carne de cerdo y verduras salteadas",
+        "img": "https://firebasestorage.googleapis.com/v0/b/palico-scafe.appspot.com/o/capcom-cafe-monster-hunter-mofumofuworld-pic-5.png?alt=media&token=15b4a15d-6b06-4f0d-aef6-69daff180f29",
+        "price": 4300,
+        "type": "principal"
+    },
+    {
+        "name": "NyanCoffe",
+        "info": "Café frío con bola de helado de vainilla",
+        "img": "https://firebasestorage.googleapis.com/v0/b/palico-scafe.appspot.com/o/capcom-cafe-monster-hunter-mofumofuworld-pic-8.png?alt=media&token=baaedce3-da02-4ff1-a60d-47cc3d12e11c",
+        "price": 1200,
+        "type": "drink"
+    },
+    {
+        "name": "PawCoffe",
+        "info": "Café helado con salsa de manjar y crema",
+        "img": "https://firebasestorage.googleapis.com/v0/b/palico-scafe.appspot.com/o/capcom-cafe-monster-hunter-mofumofuworld-pic-16.png?alt=media&token=bb5285e8-9ce1-448e-a0f8-b68a94ba5c22",
+        "price": 1500,
+        "type": "drink"
+    },
+    {
+        "name": "PoogieSoda",
+        "info": "Soda azúl con crema de leche y helado de piña",
+        "img": "https://firebasestorage.googleapis.com/v0/b/palico-scafe.appspot.com/o/capcom-cafe-monster-hunter-mofumofuworld-pic-198.png?alt=media&token=3e6ed412-6480-442f-a83f-0e2365920fe9",
+        "price": 1300,
+        "type": "drink"
+    },
+    {
+        "name": "RamuNyan",
+        "info": "Soda ramune con helado de piña",
+        "img": "https://firebasestorage.googleapis.com/v0/b/palico-scafe.appspot.com/o/capcom-cafe-monster-hunter-mofumofuworld-pic-9.png?alt=media&token=bdc54e12-8e9b-487b-8b0f-961da3e2b4b1",
+        "price": 1100,
+        "type": "drink"
+    }
+]

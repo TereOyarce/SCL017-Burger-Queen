@@ -2,8 +2,24 @@ import React from 'react'
 import logo from '../img/logo2.1.png'
 import { useHistory } from "react-router-dom";
 import Inicio from './Inicio';
+import axios from 'axios';
+import { useState } from 'react';
 
 export const Menu = () => {
+
+    const [menuBF, setmenuBF] = useState([])
+
+    const getMenuBF = () => {
+        axios.get('menuData.json')
+            .then(response => {
+                setmenuBF(response.data)
+                console.log(response.data);
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
     return (
         <div className='containerMenu'>
             <nav className='navMenu'>
@@ -21,7 +37,11 @@ export const Menu = () => {
                     </select>
                 </section>
 
-                <button className='buttonMenu' id='breakfastButton'>DESAYUNO</button>
+                <button className='buttonMenu' id='breakfastButton' onClick={getMenuBF}>DESAYUNO</button>
+                {menuBF.map((menu) => {
+                    <h3 key={menuBF.name}>{menu.name}</h3>
+                })}
+
                 <button className='buttonMenu' id='principalMenuButton'>MENÚ PRINCIPAL</button>
 
                 <section className='waiter'>
@@ -35,7 +55,9 @@ export const Menu = () => {
             </div>
 
             <div className='bodyMenu'>
-                <div className='divMenu' id='idMenu'></div>
+                <div className='divMenu' id='idMenu'>
+
+                </div>
                 <div className='detailsOrder' id='idDetailsOrder'></div>
             </div>
         </div>
