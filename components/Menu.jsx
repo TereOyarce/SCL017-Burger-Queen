@@ -2,26 +2,27 @@ import React from 'react'
 import logo from '../img/logo2.1.png'
 import { useHistory } from "react-router-dom";
 import Inicio from './Inicio';
-import axios from 'axios';
-import { useState } from 'react';
+
+
 
 export const Menu = () => {
 
-    const [menuBF, setmenuBF] = useState([])
+    const [menuBF, setmenuBF] = React.useState([])
 
-    const getMenuBF = () => {
-        axios.get('menuData.json')
-            .then(response => {
-                setmenuBF(response.data)
-                console.log(response.data);
-            })
-            .catch(error => {
-                console.log(error);
-            })
+    React.useEffect(() => {
+        getMenuBF()
+    }, [])
+    const getMenuBF = async () => {
+        const data = await fetch('menuData.json')
+        const menuData = await data.json()
+        setmenuBF(menuData.menu);
+
     }
+    
 
     return (
         <div className='containerMenu'>
+
             <nav className='navMenu'>
                 <img src={logo} className='logo' />
             </nav>
@@ -38,9 +39,7 @@ export const Menu = () => {
                 </section>
 
                 <button className='buttonMenu' id='breakfastButton' onClick={getMenuBF}>DESAYUNO</button>
-                {menuBF.map((menu) => {
-                    <h3 key={menuBF.name}>{menu.name}</h3>
-                })}
+
 
                 <button className='buttonMenu' id='principalMenuButton'>MENÚ PRINCIPAL</button>
 
@@ -56,7 +55,10 @@ export const Menu = () => {
 
             <div className='bodyMenu'>
                 <div className='divMenu' id='idMenu'>
-
+                    {menuBF.map((menu) => (
+                        <div className='individualMenu' key={menu.name}>{menu.name}-{menu.info}</div>
+                        
+    ))}
                 </div>
                 <div className='detailsOrder' id='idDetailsOrder'></div>
             </div>
