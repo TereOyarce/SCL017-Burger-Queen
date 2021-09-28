@@ -1,4 +1,5 @@
-[
+{
+    "menu" :[
     {
         "name": "FelyneLatte",
         "info": "Café americano con leche",
@@ -63,3 +64,4 @@
         "type": "drink"
     }
 ]
+}
