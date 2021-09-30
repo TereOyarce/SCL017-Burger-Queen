@@ -13,11 +13,11 @@ export const Inicio = () => {
                 <img src={logo} className='logo' />
             </nav>
             <div className='containerButton'>
-                <button onClick={() => { Menu(); history.push('/menu'); }} className='buttonIndex' id='ButtonOne'>TOMAR PEDIDO</button>
+                <button onClick={() => { history.push('/menu'); }} className='buttonIndex' id='ButtonOne'>TOMAR PEDIDO</button>
 
-                <button onClick={() => { Ready(); history.push('/ready'); }} className='buttonIndex' id='ButtonTwo'>PEDIDOS LISTOS</button>
+                <button onClick={() => {history.push('/ready'); }} className='buttonIndex' id='ButtonTwo'>PEDIDOS LISTOS</button>
 
-                <button onClick={() => { Cooking(); history.push('/cooking'); }} className='buttonIndex' id='ButtonThree'>COCINA</button>
+                <button onClick={() => { history.push('/cooking'); }} className='buttonIndex' id='ButtonThree'>COCINA</button>
             </div>
 
         </div>
