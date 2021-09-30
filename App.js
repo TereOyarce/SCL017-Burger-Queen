@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { Cooking } from "./components/Cooking";
 import { Inicio } from "./components/Inicio";
 import { Menu } from "./components/Menu";

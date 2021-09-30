@@ -14,7 +14,7 @@ body {
 /*INDEX*/
 
 .navBar,
-.navMenu {
+.imgLogo {
   display: flex;
   flex-direction: column;
 }
@@ -76,6 +76,56 @@ body {
 
 .waiter {
   grid-area: 2 / 3 / 3 / 4;
+}
+#tableClient , #waiterlist{
+border: none;
+appearance: none;
+background-color: white;
+color: var(--brown);
+padding: 1rem;
+border-radius: 0.5rem;
+cursor: pointer;
+margin: 1rem 1rem;
+}
+
+.buttonMenu {
+  appearance: none;
+  border: none;
+  background-color: var(--blue);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--background);
+  font-family: 'Poppins';
+  font-size: x-large;
+  cursor: pointer;
+  margin:auto 0.8rem;
+}
+
+.divMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.individualMenuB , .individualMenuP {
+  
+  width: 25rem;
+  height: 30rem;
+   margin: 0 auto;
+   margin-top: 1rem;
+  text-align: center; 
+  border-width: 0.3rem;
+  border-style: solid;
+  border-color: var(--pink);
+  border-radius: 0.5rem;
+  font-family: 'Poppins';
+  color: var(--brown);
+  padding: 1rem;
+ 
+  
+}
+.menuImg{
+  width: 40%;
 }
 
 
