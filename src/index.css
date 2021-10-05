@@ -54,6 +54,12 @@ body {
 
 /* MENU */
 
+.btnHome {
+  width: 8%;
+  cursor: pointer;
+  margin: 1rem;
+}
+
 .subMenu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -66,7 +72,7 @@ body {
 }
 
 
-#principalMenuButton{
+#principalMenuButton {
   grid-area: 2 / 2 / 3 / 2;
 }
 
@@ -77,15 +83,17 @@ body {
 .waiter {
   grid-area: 2 / 3 / 3 / 4;
 }
-#tableClient , #waiterlist{
-border: none;
-appearance: none;
-background-color: white;
-color: var(--brown);
-padding: 1rem;
-border-radius: 0.5rem;
-cursor: pointer;
-margin: 1rem 1rem;
+
+#tableClient,
+#waiterlist {
+  border: none;
+  appearance: none;
+  background-color: white;
+  color: var(--brown);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 1rem 1rem;
 }
 
 .buttonMenu {
@@ -98,22 +106,25 @@ margin: 1rem 1rem;
   font-family: 'Poppins';
   font-size: x-large;
   cursor: pointer;
-  margin:auto 0.8rem;
+  margin: auto 0.8rem;
 }
 
 .divMenu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  
+  width: 60%;
+  margin-left: 2rem;
+
 }
-.individualMenuB , .individualMenuP {
-  
+
+.individualMenuB,
+.individualMenuP {
+
   width: 25rem;
   height: 30rem;
-   margin: 0 auto;
-   margin-top: 1rem;
-  text-align: center; 
+  margin: 0 auto;
+  margin-top: 1rem;
+  text-align: center;
   border-width: 0.3rem;
   border-style: solid;
   border-color: var(--pink);
@@ -121,11 +132,44 @@ margin: 1rem 1rem;
   font-family: 'Poppins';
   color: var(--brown);
   padding: 1rem;
- 
-  
+
+
 }
-.menuImg{
+
+.menuImg {
   width: 40%;
 }
 
+.btnDiv {
+  width: 100%;
+  margin-left: 1rem;
+  display: flex;
+}
 
+.bodyMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.detailsOrder {
+  width: 40%;
+}
+
+p {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: bolder;
+  font-size: larger;
+  color: #798AB7;
+
+}
+.menuBtn{
+  appearance: none;
+  border: none;
+  background-color: #798AB7;
+  color: var(--background);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-size: large;
+  margin-top: 1.5rem;
+}

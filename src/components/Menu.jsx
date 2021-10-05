@@ -1,41 +1,31 @@
 import React from 'react'
 import logo from '../img/logo2.1.png'
+import home from '../img/icons8-casa.svg'
 import { useHistory } from "react-router-dom";
-import { Breakfast } from './GetMenus';
-import { PrincipalMenu } from './GetMenus';
+import data from '../components/menuData.json';
 
 
 export const Menu = () => {
     let history = useHistory();
-    // const [menuBF, setmenuBF] = React.useState([])
 
+    const [actuallyData, setDataActually] = React.useState(data.MenuPrincipal);
 
-    // const getMenuBF = async () => {
-    //     const data = await fetch('menuData.json')
-    //     const menuData = await data.json()
-    //     setmenuBF(menuData.Desayuno);
-
-
-    // }
-    // const [menuP, setmenuP] = React.useState([])
-
-    // const getMenuP = async () => {
-    //     const data = await fetch('menuData.json')
-    //     const menuData = await data.json()
-    //     setmenuP(menuData.MenuPrincipal);
-
-    // }
-
+    const showBF = () => {
+        setDataActually(data.Desayuno);
+    };
+    const showMP = () => {
+        setDataActually(data.MenuPrincipal);
+    };
 
     return (
         <div className='containerMenu'>
 
             <nav className='navMenu'>
-                <button className='btnIndex' onClick={() => { history.push('/'); }}>Inicio</button>
+                <img src={home} className='btnHome' onClick={() => { history.push('/'); }} />
             </nav>
             <div className='imgLogo'>
                 <img src={logo} className='logo' />
-                </div>
+            </div>
 
             <div className='subMenu'>
                 <section className='client'>
@@ -48,9 +38,20 @@ export const Menu = () => {
                     </select>
                 </section>
 
-            <section className='waiter'>
+                <section className='waiter'>
                     <select id="waiterlist">
                         <option selected value="0">Mesero ▼</option>
+                        <option value="1" className="waiters" id='navirou'>Navirou</option>
+                        <option value="2" className="waiters" id='hinoa'>Hinoa</option>
+                        <option value="3" className="waiters" id='fuhen'>Fuhen</option>
+                    </select>
+                </section>
+                <button className='buttonMenu' id='breakfastButton' onClick={showBF}>DESAYUNO</button>
+                <button className='buttonMenu' id='principalMenuButton' onClick={showMP}>MENÚ PRINCIPAL</button>
+
+                <section className='waiter'>
+                    <select id="waiterlist">
+                        <option selected value="0">Mesero</option>
                         <option value="1" className="waiters" id='navirou'>Navirou</option>
                         <option value="2" className="waiters" id='hinoa'>Hinoa</option>
                         <option value="3" className="waiters" id='fuhen'>Fuhen</option>
@@ -60,8 +61,17 @@ export const Menu = () => {
 
             <div className='bodyMenu'>
                 <div className='divMenu' id='idMenu'>
-                        <Breakfast/>
-                       
+
+                    {actuallyData.map((menu) => (
+                        <div className='individualMenuB' key={menu.name}>
+                            <h2 className='menuName'>{menu.name}</h2>
+                            <h3 className='menuInfo'>{menu.info}</h3>
+                            <img src={menu.img} className='menuImg' />
+                            <p>${menu.price}</p>
+                        </div>
+
+                    ))}
+
                 </div>
                 <div className='detailsOrder' id='idDetailsOrder'></div>
             </div>

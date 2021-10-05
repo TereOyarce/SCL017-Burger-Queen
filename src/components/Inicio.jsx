@@ -1,8 +1,5 @@
 import React from 'react'
 import logo from '../img/logo2.1.png'
-import Menu from './Menu'
-import Ready from './ListOrder';
-import Cooking from './Cooking';
 import { useHistory } from "react-router-dom";
 
 export const Inicio = () => {
