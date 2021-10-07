@@ -3,10 +3,11 @@ import logo from '../img/logo2.1.png'
 import home from '../img/icons8-casa.svg'
 import { useHistory } from "react-router-dom";
 import data from '../components/menuData.json';
-
+import AddToCart from './OrderSummary';
 
 export const Menu = () => {
     let history = useHistory();
+  
 
     const [actuallyData, setDataActually] = React.useState(data.MenuPrincipal);
 
@@ -68,12 +69,17 @@ export const Menu = () => {
                             <h3 className='menuInfo'>{menu.info}</h3>
                             <img src={menu.img} className='menuImg' />
                             <p>${menu.price}</p>
+                            <button className='menuBtn' onClick={AddToCart}>AGREGAR</button>
                         </div>
 
                     ))}
 
                 </div>
-                <div className='detailsOrder' id='idDetailsOrder'></div>
+                <div className='detailsOrder' id='idDetailsOrder'>
+                    <p>DETALLE ORDEN</p>
+                   <AddToCart
+                   />
+                </div>
             </div>
         </div>
     )
