@@ -1,13 +1,13 @@
 //import React from "react";
 import { Cooking } from "./components/Cooking";
 import { Inicio } from "./components/Inicio";
-import { Menu } from "./components/Menu";
 import { Ready } from "./components/ListOrder";
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import { Waiters } from "./components/Waiters";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Switch>
 
         <Route path='/menu'>
-          <Menu />
+          <Waiters />
         </Route>
         <Route path='/cooking'>
           <Cooking />

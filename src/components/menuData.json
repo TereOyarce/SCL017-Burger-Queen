@@ -5,13 +5,15 @@
                 "name": "FelyneLatte",
                 "info": "Café americano con leche",
                 "img": "https://imgur.com/NKzf1ie.png",
-                "price": 1200
+                "price": 1200 ,
+                "id" : 1
             },
             {
                 "name": "MelynxPan",
                 "info": "Pancakes con variedad de salsas dulces",
                 "img": "https://imgur.com/P5sl1uA.png",
-                "price": 2300
+                "price": 2300  ,
+                "id" : 2
             }
         ]
         ,
@@ -20,19 +22,22 @@
                 "name": "CurryPao",
                 "info": "Curry de verduras, con variedad de proteínas",
                 "img": "https://imgur.com/jdifh0X.png",
-                "price": 4500
+                "price": 4500 ,
+                "id" : 3
             },
             {
                 "name": "Omelyne",
                 "info": "Omelette, acompañado de huevo frito, ensalada y sopa",
                 "img": "https://imgur.com/Znze46n.png",
-                "price": 5500
+                "price": 5500 ,
+                "id" : 4
             },
             {
                 "name": "PanPanFestin",
                 "info": "Pan de huevo relleno de carne de cerdo y verduras salteadas",
                 "img": "https://imgur.com/JGweYrp.png",
-                "price": 4300
+                "price": 4300 ,
+                "id" : 5
             }
             
         ],
@@ -41,25 +46,29 @@
                 "name": "NyanCoffe",
                 "info": "Café frío con bola de helado de vainilla",
                 "img": "https://imgur.com/iqyRB8w.png",
-                "price": 1200
+                "price": 1200 ,
+                "id" : 6
             },
             {
                 "name": "PawCoffe",
                 "info": "Café helado con salsa de manjar y crema",
                 "img": "https://imgur.com/aLgej7l.png",
-                "price": 1500
+                "price": 1500,
+                "id" : 7
             },
             {
                 "name": "PoogieSoda",
                 "info": "Soda azúl con crema de leche y helado de piña",
                 "img": "https://imgur.com/FAxjb9W.png",
-                "price": 1300
+                "price": 1300 ,
+                "id" : 8
             },
             {
                 "name": "RamuNyan",
                 "info": "Soda ramune con helado de piña",
                 "img": "https://imgur.com/XrfKK1y.png",
-                "price": 1100
+                "price": 1100 ,
+                "id" : 9
             }
         ]
 }
