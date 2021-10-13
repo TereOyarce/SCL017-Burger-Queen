@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-  width: 40%;
+  width: 30%;
   padding: 1rem;
   margin: auto;
   align-self: center;
@@ -55,7 +55,7 @@ body {
 /* MENU */
 
 .btnHome {
-  width: 8%;
+  width: 5%;
   cursor: pointer;
   margin: 1rem;
 }

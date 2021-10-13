@@ -7,7 +7,7 @@ export const Inicio = () => {
     return (
         <div className='containerInicio'>
             <nav className='navBar'>
-                <img src={logo} className='logo' />
+                <img src={logo} alt='palicoscafe' className='logo' />
             </nav>
             <div className='containerButton'>
                 <button onClick={() => { history.push('/menu'); }} className='buttonIndex' id='ButtonOne'>TOMAR PEDIDO</button>
