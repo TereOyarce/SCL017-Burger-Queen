@@ -20,7 +20,7 @@ const AddMenuCart = (props) => {
                     </div>
 
                 ))}
-                 <button className='sendOrder'>ENVIAR</button>
+                 <button className='sendOrder'>ENVIAR</button> 
             </div>
            
         </div>
