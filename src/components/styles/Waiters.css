@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+  --background: #FFF5EA;
+  --blue: #798AB7;
+  --brown: #5D534A;
+  --pink: #F7DAD9;
+}
+
+.btnHome {
+    width: 5%;
+    cursor: pointer;
+    margin: 1rem;
+  }
+
+  .subMenu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  .client {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  .waiter {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  
+  #breakfastButton {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  
+  #principalMenuButton {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  
+  #drinkButton {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  
+  #tableClient,
+  #waiterlist {
+    border: none;
+    appearance: none;
+    background-color: white;
+    color: var(--brown);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 1rem 1rem;
+  }
+  
+  .buttonMenu {
+    appearance: none;
+    border: none;
+    background-color: var(--blue);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--background);
+    font-family: 'Poppins';
+    font-size: x-large;
+    cursor: pointer;
+    margin: auto 0.8rem;
+  }
