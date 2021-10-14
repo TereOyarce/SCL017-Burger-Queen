@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/TereOyarce/SCL017-Burger-Queen/static/css/main.fc506ddd.chunk.css",
+    "main.js": "/TereOyarce/SCL017-Burger-Queen/static/js/main.ce0ed664.chunk.js",
+    "main.js.map": "/TereOyarce/SCL017-Burger-Queen/static/js/main.ce0ed664.chunk.js.map",
+    "runtime-main.js": "/TereOyarce/SCL017-Burger-Queen/static/js/runtime-main.6b957715.js",
+    "runtime-main.js.map": "/TereOyarce/SCL017-Burger-Queen/static/js/runtime-main.6b957715.js.map",
+    "static/js/2.436d1cea.chunk.js": "/TereOyarce/SCL017-Burger-Queen/static/js/2.436d1cea.chunk.js",
+    "static/js/2.436d1cea.chunk.js.map": "/TereOyarce/SCL017-Burger-Queen/static/js/2.436d1cea.chunk.js.map",
+    "static/js/3.443c7d5d.chunk.js": "/TereOyarce/SCL017-Burger-Queen/static/js/3.443c7d5d.chunk.js",
+    "static/js/3.443c7d5d.chunk.js.map": "/TereOyarce/SCL017-Burger-Queen/static/js/3.443c7d5d.chunk.js.map",
+    "index.html": "/TereOyarce/SCL017-Burger-Queen/index.html",
+    "static/css/main.fc506ddd.chunk.css.map": "/TereOyarce/SCL017-Burger-Queen/static/css/main.fc506ddd.chunk.css.map",
+    "static/js/2.436d1cea.chunk.js.LICENSE.txt": "/TereOyarce/SCL017-Burger-Queen/static/js/2.436d1cea.chunk.js.LICENSE.txt",
+    "static/media/logo2.1.8aa6ece0.png": "/TereOyarce/SCL017-Burger-Queen/static/media/logo2.1.8aa6ece0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b957715.js",
+    "static/js/2.436d1cea.chunk.js",
+    "static/css/main.fc506ddd.chunk.css",
+    "static/js/main.ce0ed664.chunk.js"
+  ]
+}
