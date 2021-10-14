@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+  --background: #FFF5EA;
+  --blue: #798AB7;
+  --brown: #5D534A;
+  --pink: #F7DAD9;
+}
+
+
+.orderTable {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  left: 4rem;
+  bottom: 8rem;
+  margin-left: 35rem;
+  width: 22rem;
+
+}
+
+.containerOrder {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: var(--pink);
+  width: 22rem;
+  height: 33.5rem;
+
+}
+
+.itemOrder {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-weight: bolder;
+  color: var(--brown);
+  margin-bottom: 0.5rem;
+  
+}
+.pOrder{
+  font-weight:bolder;
+  font-size: x-large;
+}
+.xBtn {
+ width: 15%;
+ 
+  
+  
+}
+
+.sendOrder {
+  appearance: none;
+  border: none;
+  background-color: #798AB7;
+  color: var(--background);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: large;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  width: 50%;
+  align-self: center;
+  align-content: center;
+
+}

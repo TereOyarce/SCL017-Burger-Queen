@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+  --background: #FFF5EA;
+  --blue: #798AB7;
+  --brown: #5D534A;
+  --pink: #F7DAD9;
+}
+
+.navBar,
+.imgLogo {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  .buttonIndex {
+    width: 70%;
+    align-self: center;
+    padding: 2rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 5rem;
+    appearance: none;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--blue);
+    color: var(--background);
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+  
+  }

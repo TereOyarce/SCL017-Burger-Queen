@@ -1,10 +1,16 @@
 import React from 'react'
-import data from '../components/menuData.json'
+import data from './menuData.json'
 import Menu from './Menu'
 import AddMenuCart from './AddMenuCart'
+import  home from '../img/homeicon.png';
+import  logo from '../img/logo2.1.png';
+import { useHistory } from "react-router-dom";
+import './styles/Waiters.css'
 
 
 export const Waiters = () => {
+
+    let history = useHistory();
 
     const [actuallyData, setDataActually] = React.useState(data.MenuPrincipal);
     const [actuallyCart, setCartActually] = React.useState([]);
@@ -16,20 +22,31 @@ export const Waiters = () => {
     const showMP = () => {
         setDataActually(data.MenuPrincipal);
     };
+    const showDr = () =>{
+        setDataActually(data.Bebidas)
+    }
 
     const addItemCart = (item) => {
         setCartActually([...actuallyCart, item])
     }
 
-    const removeItemCart = (item) =>{
+    const removeItemCart = (item) => {
         let copyCart = [...actuallyCart];
-        copyCart = copyCart.filter((cartItem)=>
-        cartItem.id !== item.id);
+        copyCart = copyCart.filter((cartItem) =>
+            cartItem.id !== item.id);
         setCartActually(copyCart);
     }
 
     return (
-        <div>
+
+        <div className='containerMenu'>
+
+            <nav className='navMenu'>
+                <img src={home} alt='Home' className='btnHome' onClick={() => { history.push('/'); }} />
+            </nav>
+            <div className='imgLogo'>
+                <img src={logo} alt='palicoscafe' className='logo' />
+            </div>
             <div className='subMenu'>
                 <section className='client'>
                     <select id="tableClient">
@@ -51,6 +68,8 @@ export const Waiters = () => {
                 </section>
                 <button className='buttonMenu' id='breakfastButton' onClick={showBF}>DESAYUNO</button>
                 <button className='buttonMenu' id='principalMenuButton' onClick={showMP}>PRINCIPAL</button>
+                <button className='buttonMenu' id='drinkButton' onClick={showDr}>BEBIDAS</button>
+
             </div>
             <Menu
                 actuallyData={actuallyData}

@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../img/logo2.1.png'
 import { useHistory } from "react-router-dom";
+import './styles/Inicio.css'
 
 export const Inicio = () => {
     let history = useHistory();

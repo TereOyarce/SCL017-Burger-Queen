@@ -11,148 +11,11 @@ body {
   background-color: var(--background);
 }
 
-/*INDEX*/
-
-.navBar,
-.imgLogo {
-  display: flex;
-  flex-direction: column;
-}
-
 .logo {
   width: 30%;
   padding: 1rem;
   margin: auto;
   align-self: center;
-}
-
-.containerButton {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-.buttonIndex {
-  width: 70%;
-  align-self: center;
-  padding: 2rem;
-  margin-left: 7rem;
-  margin-right: 7rem;
-  margin-top: 5rem;
-  appearance: none;
-  border: none;
-  border-radius: 1rem;
-  background-color: var(--blue);
-  color: var(--background);
-  font-size: 2.5rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-
-}
-
-/* MENU */
-
-.btnHome {
-  width: 5%;
-  cursor: pointer;
-  margin: 1rem;
-}
-
-.subMenu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 1em 1em;
-}
-
-.client {
-  grid-area: 1 / 1 / 2 / 4;
-}
-
-
-#principalMenuButton {
-  grid-area: 2 / 2 / 3 / 2;
-}
-
-#breakfastMenuButton {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.waiter {
-  grid-area: 2 / 3 / 3 / 4;
-}
-
-#tableClient,
-#waiterlist {
-  border: none;
-  appearance: none;
-  background-color: white;
-  color: var(--brown);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  margin: 1rem 1rem;
-}
-
-.buttonMenu {
-  appearance: none;
-  border: none;
-  background-color: var(--blue);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  color: var(--background);
-  font-family: 'Poppins';
-  font-size: x-large;
-  cursor: pointer;
-  margin: auto 0.8rem;
-}
-
-.divMenu {
-  display: flex;
-  flex-wrap: wrap;
-  width: 60%;
-  margin-left: 2rem;
-
-}
-
-.individualMenuB,
-.individualMenuP {
-
-  width: 25rem;
-  height: 30rem;
-  margin: 0 auto;
-  margin-top: 1rem;
-  text-align: center;
-  border-width: 0.3rem;
-  border-style: solid;
-  border-color: var(--pink);
-  border-radius: 0.5rem;
-  font-family: 'Poppins';
-  color: var(--brown);
-  padding: 1rem;
-
-
-}
-
-.menuImg {
-  width: 40%;
-}
-
-.btnDiv {
-  width: 100%;
-  margin-left: 1rem;
-  display: flex;
-}
-
-.bodyMenu {
-  display: flex;
-  flex-direction: row;
-}
-
-.detailsOrder {
-  width: 40%;
 }
 
 p {
@@ -162,14 +25,4 @@ p {
   font-size: larger;
   color: #798AB7;
 
-}
-.menuBtn{
-  appearance: none;
-  border: none;
-  background-color: #798AB7;
-  color: var(--background);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  font-size: large;
-  margin-top: 1.5rem;
 }

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+  --background: #FFF5EA;
+  --blue: #798AB7;
+  --brown: #5D534A;
+  --pink: #F7DAD9;
+}
+
+.bodyMenu {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  .divMenu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10rem;
+  }
+  .individualMenuB,
+.individualMenuP {
+
+  width: 25rem;
+  height: 30rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  text-align: center;
+  border-width: 0.3rem;
+  border-style: solid;
+  border-color: var(--pink);
+  border-radius: 1rem;
+  font-family: 'Poppins';
+  color: var(--brown);
+  padding: 1rem;
+
+
+}
+.menuImg {
+    width: 40%;
+  }
+
+  .menuBtn {
+    appearance: none;
+    border: none;
+    background-color: #798AB7;
+    color: var(--background);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: large;
+    margin-top: 1.5rem;
+  }
