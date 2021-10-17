@@ -14,6 +14,7 @@ export const Waiters = () => {
 
     const [actuallyData, setDataActually] = React.useState(data.MenuPrincipal);
     const [actuallyCart, setCartActually] = React.useState([]);
+    const [totalCart , setTotalCart] = React.useState(0)
 
 
     const showBF = () => {
@@ -27,15 +28,40 @@ export const Waiters = () => {
     }
 
     const addItemCart = (item) => {
-        setCartActually([...actuallyCart, item])
+        // setCartActually([...actuallyCart, item])
+        const exist = actuallyCart.find((cartItem)=>cartItem.id === item.id)
+        if (exist){
+            setCartActually(
+                actuallyCart.map((cartItem)=>
+                cartItem.id === item.id ? {...exist, qty: exist.qty + 1} : cartItem)
+            )
+        }
+        else {
+            setCartActually([...actuallyCart,{...item,qty: 1}])
+        }
     }
 
     const removeItemCart = (item) => {
-        let copyCart = [...actuallyCart];
-        copyCart = copyCart.filter((cartItem) =>
-            cartItem.id !== item.id);
-        setCartActually(copyCart);
+        const exist =actuallyCart.find((cartItem) => cartItem.id === item.id );
+        if (exist.qty === 1) {
+          setCartActually(actuallyCart.filter((cartItem) => cartItem.id !== item.id))
+        } else {
+          setCartActually(
+            actuallyCart.map((cartItem) =>
+                cartItem.id === item.id ? {...exist, qty: exist.qty - 1} : cartItem
+            )
+          );
+        }
     }
+
+    React.useEffect(() => {
+        total();
+      }, [actuallyCart]);
+  
+      const total = () => {
+        let totalCart = actuallyCart.reduce((a, c) => a + c.qty * c.price, 0);
+        setTotalCart(totalCart);
+      }
 
     return (
 
@@ -78,6 +104,7 @@ export const Waiters = () => {
             <AddMenuCart
                 actuallyCart={actuallyCart}
                 removeItemCart={removeItemCart}
+                totalCart={totalCart}
             />
         </div>
     )

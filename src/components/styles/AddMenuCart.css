@@ -59,10 +59,20 @@
   padding: 1rem;
   border-radius: 1rem;
   font-size: large;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   width: 50%;
   align-self: center;
   align-content: center;
+ 
+}
+
+.totalCart {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: larger;
+  color: var(--brown);
+  text-align: center;
+  margin-top: 1rem;
 
 }
