@@ -2,8 +2,6 @@ import React from 'react'
 import data from './menuData.json'
 import Menu from './Menu'
 import AddMenuCart from './AddMenuCart'
-import  home from '../img/homeicon.png';
-import  logo from '../img/logo2.1.png';
 import { useHistory } from "react-router-dom";
 import './styles/Waiters.css'
 
@@ -68,10 +66,10 @@ export const Waiters = () => {
         <div className='containerMenu'>
 
             <nav className='navMenu'>
-                <img src={home} alt='Home' className='btnHome' onClick={() => { history.push('/'); }} />
+                <img src={require('./img/homeicon.png').default} alt='Home' className='btnHome' onClick={() => { history.push('/'); }} />
             </nav>
             <div className='imgLogo'>
-                <img src={logo} alt='palicoscafe' className='logo' />
+                <img src={require('./img/logo2.1.png').default} alt='palicoscafe' className='logo' />
             </div>
             <div className='subMenu'>
                 <section className='client'>

@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles/AddMenuCart.css'
-import deleteIcon from '../img/deleteicon2.png'
 
 const AddMenuCart = (props) => {
     const { actuallyCart, removeItemCart, totalCart } = props;
@@ -15,7 +14,7 @@ const AddMenuCart = (props) => {
                 {actuallyCart.map((item) => (
                     <div className='itemOrder' key={item.id}>
                         {`${item.qty} ${item.name} = $${item.price}`}
-                        <img src={deleteIcon} alt='delete' className='xBtn' onClick={() => removeItemCart(item)} />
+                        <img src={require('./img/deleteicon2.png').default} alt='delete' className='xBtn' onClick={() => removeItemCart(item)} />
 
                     </div>
 

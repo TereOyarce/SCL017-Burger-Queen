@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../img/logo2.1.png'
 import { useHistory } from "react-router-dom";
 import './styles/Inicio.css'
 
@@ -8,7 +7,7 @@ export const Inicio = () => {
     return (
         <div className='containerInicio'>
             <nav className='navBar'>
-                <img src={logo} alt='palicoscafe' className='logo' />
+                <img src={require('./img/logo2.1.png').default} alt='palicoscafe' className='logo' />
             </nav>
             <div className='containerButton'>
                 <button onClick={() => { history.push('/menu'); }} className='buttonIndex' id='ButtonOne'>TOMAR PEDIDO</button>
