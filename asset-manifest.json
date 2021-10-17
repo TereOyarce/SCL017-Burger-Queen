@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/TereOyarce/SCL017-Burger-Queen/static/css/main.fc506ddd.chunk.css",
-    "main.js": "/TereOyarce/SCL017-Burger-Queen/static/js/main.ce0ed664.chunk.js",
-    "main.js.map": "/TereOyarce/SCL017-Burger-Queen/static/js/main.ce0ed664.chunk.js.map",
-    "runtime-main.js": "/TereOyarce/SCL017-Burger-Queen/static/js/runtime-main.6b957715.js",
-    "runtime-main.js.map": "/TereOyarce/SCL017-Burger-Queen/static/js/runtime-main.6b957715.js.map",
-    "static/js/2.436d1cea.chunk.js": "/TereOyarce/SCL017-Burger-Queen/static/js/2.436d1cea.chunk.js",
-    "static/js/2.436d1cea.chunk.js.map": "/TereOyarce/SCL017-Burger-Queen/static/js/2.436d1cea.chunk.js.map",
-    "static/js/3.443c7d5d.chunk.js": "/TereOyarce/SCL017-Burger-Queen/static/js/3.443c7d5d.chunk.js",
-    "static/js/3.443c7d5d.chunk.js.map": "/TereOyarce/SCL017-Burger-Queen/static/js/3.443c7d5d.chunk.js.map",
-    "index.html": "/TereOyarce/SCL017-Burger-Queen/index.html",
-    "static/css/main.fc506ddd.chunk.css.map": "/TereOyarce/SCL017-Burger-Queen/static/css/main.fc506ddd.chunk.css.map",
-    "static/js/2.436d1cea.chunk.js.LICENSE.txt": "/TereOyarce/SCL017-Burger-Queen/static/js/2.436d1cea.chunk.js.LICENSE.txt",
-    "static/media/logo2.1.8aa6ece0.png": "/TereOyarce/SCL017-Burger-Queen/static/media/logo2.1.8aa6ece0.png"
+    "main.css": "./static/css/main.43e55a96.chunk.css",
+    "main.js": "./static/js/main.f3ea26e7.chunk.js",
+    "main.js.map": "./static/js/main.f3ea26e7.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.31d357f3.js",
+    "runtime-main.js.map": "./static/js/runtime-main.31d357f3.js.map",
+    "static/js/2.a02830dc.chunk.js": "./static/js/2.a02830dc.chunk.js",
+    "static/js/2.a02830dc.chunk.js.map": "./static/js/2.a02830dc.chunk.js.map",
+    "static/js/3.afb3c3fd.chunk.js": "./static/js/3.afb3c3fd.chunk.js",
+    "static/js/3.afb3c3fd.chunk.js.map": "./static/js/3.afb3c3fd.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.43e55a96.chunk.css.map": "./static/css/main.43e55a96.chunk.css.map",
+    "static/js/2.a02830dc.chunk.js.LICENSE.txt": "./static/js/2.a02830dc.chunk.js.LICENSE.txt",
+    "static/media/logo2.1.8aa6ece0.png": "./static/media/logo2.1.8aa6ece0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b957715.js",
-    "static/js/2.436d1cea.chunk.js",
-    "static/css/main.fc506ddd.chunk.css",
-    "static/js/main.ce0ed664.chunk.js"
+    "static/js/runtime-main.31d357f3.js",
+    "static/js/2.a02830dc.chunk.js",
+    "static/css/main.43e55a96.chunk.css",
+    "static/js/main.f3ea26e7.chunk.js"
   ]
 }
